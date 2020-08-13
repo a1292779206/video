@@ -1,0 +1,44 @@
+{
+  "id": "1681645",
+  "name": "1970/06vue项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3905042",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "4933193",
+      "name": "火",
+      "font_class": "huo",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "6185482",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "6200254",
+      "name": "vip",
+      "font_class": "vip",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "10232802",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e791",
+      "unicode_decimal": 59281
+    }
+  ]
+}

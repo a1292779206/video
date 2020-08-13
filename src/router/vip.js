@@ -1,0 +1,21 @@
+export default {
+    path:"/vip",
+    name:"vip会员",
+    component:()=>import("../views/vip.vue"),
+    children:[
+        {
+            path:"/",
+            redirect:"/vip/ordinary"
+        },
+        {
+            path:"ordinary",
+            name:"普通充值",
+            component:()=>import("../components/recharge/ordinary.vue")
+        },
+        {
+            path:"super",
+            name:"超级充值",
+            component:()=>import("../components/recharge/super.vue")
+        }
+    ]
+}

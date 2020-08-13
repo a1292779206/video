@@ -1,0 +1,29 @@
+export default [
+    {
+        path:"/paymentList",
+        name:"订单列表",
+        component:()=>import("../views/paymentList.vue"),
+        children:[
+            {
+                path:"paymentListAll",
+                name:"全部订单",
+                component:()=>import("../components/paymentList/paymentListAll.vue")
+            },
+            {
+                path:"paymentListPlay",
+                name:"未支付",
+                component:()=>import("../components/paymentList/paymentListPlay.vue")
+            },
+            {
+                path:"paymentListGoods",
+                name:"待收货",
+                component:()=>import("../components/paymentList/paymentListGoods.vue")
+            },
+            {
+                path:"paymentListEnd",
+                name:"已完成",
+                component:()=>import("../components/paymentList/paymentListEnd.vue")
+            },
+        ]
+    }
+]

@@ -1,23 +1,35 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
+import paymentInterface from "./paymentInterface"
+import publics from "./public"
+import homepage from "./homepage"
+import search from "./search"
+import smallvideo from "./smallvideo"
+import vip from "./vip"
+import doki from "./doki"
+import personalcenter from "./personalcenter"
+import autoplay from "./autoplay"
+import payment from "./payment"
+
+
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path:"/",
+    redirect:"/advertpage"
   },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  ...publics,
+  homepage,
+  smallvideo,
+  vip,
+  doki,
+  ...personalcenter,
+  ...search,
+  autoplay,
+  ...paymentInterface,
+  ...payment
 ]
 
 const router = new VueRouter({
